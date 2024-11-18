@@ -7,8 +7,6 @@ import { UserBook } from '../../model/UserBook';
 
 function Library() {
   const navigate = useNavigate();
-  const [books, setBooks] = useState<Book[]>([]);
-  const [userBooks, setUserBooks] = useState<UserBook[]>([]);
 
   const [notStartedBooks, setNotStartedBooks] = useState<UserBook[]>([]);
   const [inProgressBooks, setInProgressBooks] = useState<UserBook[]>([]);
@@ -27,7 +25,6 @@ function Library() {
           `http://localhost:3000/user_books?usuarioId=${user.id}`
         );
         const userBooksData = await userBooksResponse.json();
-        setUserBooks(userBooksData);
   
         // Extrair os IDs dos livros que o usuário possui
         const userBookIds = userBooksData.map((ub: { bookId: number }) => ub.bookId);
@@ -40,7 +37,6 @@ function Library() {
 
   
         // Atualizar o estado com a lista de livros do usuário
-        setBooks(filteredBooks);
 
         // Associar os detalhes de cada livro ao `userBooksData`
         userBooksData.forEach(async (userBook: UserBook) => {
@@ -50,7 +46,6 @@ function Library() {
             }
           });
         });
-        setUserBooks(userBooksData);
 
         // Filtrar os livros em categorias
         setNotStartedBooks(userBooksData.filter((ub: UserBook) => ub.progress === 0));

@@ -1,13 +1,13 @@
-import React, {useState} from 'react';
+import {useState} from 'react';
 import './Sidebar.css';
 import Divider from '@mui/material/Divider';
 import { useLocation } from 'react-router-dom';
 import ModalInfo from '../../utils/ModalInfo';
 import { User } from '../../model/User';
-import { styled, Tooltip } from '@mui/material';
+import { styled, Tooltip, TooltipProps } from '@mui/material';
 
 // Customização do Tooltip com MUI
-const CustomTooltip = styled(({ className, ...props }) => (
+const CustomTooltip = styled(({ className, ...props }: TooltipProps & { className?: string }) => (
   <Tooltip {...props} classes={{ popper: className }} />
 ))({
   '& .MuiTooltip-tooltip': {
@@ -36,7 +36,7 @@ function Sidebar() {
     setIsModalOpen(!isModalOpen)
   }
 
-  const [user, setUser] = useState<User | null>(() => {
+  const [user] = useState<User | null>(() => {
     const storedUser = sessionStorage.getItem('user');
     return storedUser ? JSON.parse(storedUser) as User : null;
   });

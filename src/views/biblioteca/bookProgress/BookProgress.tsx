@@ -11,7 +11,7 @@ import { Insignia } from '../../../model/Insignia';
 
 const Transition = React.forwardRef(function Transition(
   props: TransitionProps & {
-    children: React.ReactElement<any, any>;
+    children: React.ReactElement<unknown, string | React.JSXElementConstructor<unknown>>;
   },
   ref: React.Ref<unknown>,
 ) {
@@ -87,7 +87,7 @@ function BookProgress() {
   // Função para buscar o registro de leitura do usuário
   useEffect(() => {
     const fetchUserBookProgress = async () => {
-      if (!user.id || !id) return;
+      if (!user || !user.id || !id) return;
 
       try {
         const response = await fetch(
@@ -116,12 +116,12 @@ function BookProgress() {
   }
 
   const handleModal = () => {
-    setMaxPagesToRegister(userBook?.totalPages - userBook?.pagesRead);
+    setMaxPagesToRegister((userBook?.totalPages ?? 0) - (userBook?.pagesRead ?? 0));
     setPagesToRegister(0);
     setOpen(!open);
   }
 
-  const handlePagesChange = (e) => {
+  const handlePagesChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const pages = parseInt(e.target.value, 10) || 0;
     if (pages > maxPagesToRegister) {
       setErrorMessage(`Não é possivel registrar mais paginas do que faltam.`);
@@ -133,8 +133,8 @@ function BookProgress() {
   };
 
   const registerRead = async () => {
-    const newUserBook: UserBook = { ...userBook };
-    const newUser: User = { ...user };
+    const newUserBook: UserBook = { ...userBook! };
+    const newUser: User = { ...user! };
     
     newUserBook!.pagesRead += pagesToRegister;
     newUserBook!.progress = Math.floor((newUserBook!.pagesRead / newUserBook!.totalPages) * 100);
@@ -250,8 +250,8 @@ function BookProgress() {
     });
 
     remainingInsignias
-    .filter((insignia) => insignia.categoria === 'geral')
-    .forEach(async (insignia) => {
+    .filter((insignia: Insignia) => insignia.categoria === 'geral')
+    .forEach(async (insignia: Insignia) => {
       const remainingBooksForGeneral = insignia.numeroRepresentativo - newUser.totalBooksRead;
       console.log("remainingBooksForGeneral",remainingBooksForGeneral);
       if (remainingBooksForGeneral <= 0) {
@@ -340,7 +340,7 @@ function BookProgress() {
               error={!!errorMessage}
             />
             <div>
-              Novo progresso de leitura: {userBook?.pagesRead + pagesToRegister} de {userBook?.totalPages}
+              Novo progresso de leitura: {(userBook?.pagesRead || 0) + pagesToRegister} de {userBook?.totalPages}
             </div>
           </div>
         </DialogContent>

@@ -9,7 +9,7 @@ import { Dialog, DialogActions, DialogContent, DialogTitle, Slide, styled, TextF
 
 const Transition = React.forwardRef(function Transition(
   props: TransitionProps & {
-    children: React.ReactElement<any, any>;
+    children: React.ReactElement<unknown, string | React.JSXElementConstructor<unknown>>;
   },
   ref: React.Ref<unknown>,
 ) {
@@ -49,7 +49,7 @@ function BookDetails() {
   const [loading, setLoading] = useState<boolean>(true); // Estado para controlar o loading
   const [error, setError] = useState<string | null>(null); // Estado para armazenar erros
   const [isInLibrary, setIsInLibrary] = useState(false);
-  const [user, setUser] = useState<User | null>(() => {
+  const [user] = useState<User | null>(() => {
     const storedUser = sessionStorage.getItem('user');
     return storedUser ? JSON.parse(storedUser) as User : null;
   });
@@ -145,7 +145,7 @@ function BookDetails() {
     }
   }
 
-  const handlePagesChange = (e) => {
+  const handlePagesChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const pages = parseInt(e.target.value, 10) || 0;
     settotalPages(pages);
   };

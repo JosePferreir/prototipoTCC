@@ -120,11 +120,11 @@
       "name": "testudo",
       "email": "tt",
       "password": "123",
-      "nivel": 2,
-      "pontos": 2800,
-      "sequencia": 2,
+      "nivel": 3,
+      "pontos": 3300,
+      "sequencia": 1,
       "sequenciaMaxima": 2,
-      "pagesRead": 520,
+      "pagesRead": 620,
       "totalBooksRead": 1,
       "genresRead": {
         "romance": 0,
@@ -132,7 +132,26 @@
         "investigacao": 0,
         "economia": 0
       },
-      "lastReadDate": "2024-11-12"
+      "lastReadDate": "2024-11-18"
+    },
+    {
+      "id": "7",
+      "name": "gollum",
+      "email": "go",
+      "password": "123",
+      "nivel": 2,
+      "pontos": 2700,
+      "sequencia": 1,
+      "sequenciaMaxima": 0,
+      "pagesRead": 500,
+      "totalBooksRead": 1,
+      "genresRead": {
+        "romance": 0,
+        "aventura": 1,
+        "investigacao": 0,
+        "economia": 0
+      },
+      "lastReadDate": "2024-11-18"
     }
   ],
   "user_books": [
@@ -207,6 +226,22 @@
       "totalPages": 500,
       "pagesRead": 20,
       "progress": 4
+    },
+    {
+      "id": "f98f",
+      "usuarioId": 6,
+      "bookId": 5,
+      "totalPages": 250,
+      "pagesRead": 100,
+      "progress": 40
+    },
+    {
+      "id": "abb9",
+      "usuarioId": 7,
+      "bookId": 1,
+      "totalPages": 500,
+      "pagesRead": 500,
+      "progress": 100
     }
   ],
   "insignias": [
@@ -396,6 +431,11 @@
     {
       "id": "fc61",
       "usuarioId": "6",
+      "insigniaId": "1"
+    },
+    {
+      "id": "ce2d",
+      "usuarioId": "7",
       "insigniaId": "1"
     }
   ]

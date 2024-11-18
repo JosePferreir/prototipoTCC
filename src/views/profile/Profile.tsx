@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './Profile.css';
 import ModalInfo from '../../utils/ModalInfo';
 import { User } from '../../model/User';
@@ -21,7 +21,7 @@ const StyledBadge = styled(Badge)<BadgeProps>(() => ({
 
 function Profile() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [user, setUser] = useState<User | null>(() => {
+  const [user] = useState<User | null>(() => {
     const storedUser = sessionStorage.getItem('user');
     return storedUser ? JSON.parse(storedUser) as User : null;
   });
@@ -33,6 +33,7 @@ function Profile() {
       
       // Carrega as insígnias
       const insigniasResponse = await fetch('http://localhost:3000/insignias');
+      if (!user) return;
       const userInsigniasResponse = await fetch(`http://localhost:3000/user_insignias?usuarioId=${user.id}`);
       const insigniasData = await insigniasResponse.json();
       const userInsigniasData = await userInsigniasResponse.json();

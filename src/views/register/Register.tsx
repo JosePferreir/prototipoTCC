@@ -51,7 +51,7 @@ const Register: React.FC = () => {
         }, 0);
 
         // Modelo do novo usuário com valores iniciais
-        const newUser: Omit<User, 'id'> = {
+        const newUser = {
           id: (lastId + 1).toString(),
           name,
           email,

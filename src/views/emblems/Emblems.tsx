@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import {useEffect, useState} from 'react';
 import './Emblems.css';
 import { Badge, BadgeProps, styled } from '@mui/material';
 import ModalInfo from '../../utils/ModalInfo';
@@ -37,7 +37,7 @@ function Emblems() {
     const fetchData = async () => {
       // Carrega as insígnias
       const insigniasResponse = await fetch('http://localhost:3000/insignias');
-      const userInsigniasResponse = await fetch(`http://localhost:3000/user_insignias?usuarioId=${user.id}`);
+      const userInsigniasResponse = user ? await fetch(`http://localhost:3000/user_insignias?usuarioId=${user.id}`) : { json: async () => [] };
       const insigniasData = await insigniasResponse.json();
       const userInsigniasData = await userInsigniasResponse.json();
       
@@ -47,8 +47,10 @@ function Emblems() {
       const remainingInsignias = insigniasData.filter((insignia: Insignia) => !userInsigniaIds.includes(Number(insignia.id)));
 
       await setInsignias(remainingInsignias);
-      user.insignias = userInsignias;
-      setUser({ ...user });
+      if (user) {
+        user.insignias = userInsignias;
+        setUser({ ...user });
+      }
       console.log("remainingInsignias",remainingInsignias);
       console.log("userInsignias",userInsignias);
       console.log(user);
