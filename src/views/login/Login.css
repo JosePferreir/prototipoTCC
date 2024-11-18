@@ -1,0 +1,66 @@
+/* Centraliza o contêiner na tela */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #96CCA8; /* Cor de fundo opcional para a página */
+}
+
+/* Estilo da caixa de login */
+.login-box {
+  background-color: #C5EDC8; /* Fundo verde */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Estilo adicional para o formulário */
+.login-box h2 {
+  margin-bottom: 20px;
+}
+
+.login-box form div {
+  margin-bottom: 15px;
+}
+
+.login-box label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  background-color: #70997e; /* Cor de botão */
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-box button:hover {
+  background-color: #5a7d63; /* Cor ao passar o mouse */
+}
+
+.create-account-link {
+  font-size: 14px;
+  color: #3c5845;
+  margin-top: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.create-account-link span {
+  text-decoration: underline;
+}
+
+.create-account-link:hover {
+  color: #2b4536;
+}

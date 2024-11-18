@@ -1,0 +1,327 @@
+.profile-container{
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  height: calc(100vh - 106px);
+}
+
+.profile-header{
+  display: flex;
+  align-items: center;
+  background-color: #96CCA8;
+  padding: 15px;
+  border-radius: 14px;
+  font-size: 40px;
+  gap: 30px;
+}
+
+.profile-iconWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #C6EEC9;
+  border-radius: 13px;
+}
+
+.profileIcon {
+  display: inline-block; /* Certifique-se que o elemento pode ter um tamanho */
+  width: 80px;           /* Defina o tamanho do ícone */
+  height: 80px;          /* Defina o tamanho do ícone */
+  background-image: url('/icons/perfilIcon.svg'); /* Caminho para o SVG */
+  background-size: contain; /* Garante que o SVG seja redimensionado corretamente */
+  background-repeat: no-repeat;
+}
+
+.profile-bookIcon {
+  display: inline-block; /* Certifique-se que o elemento pode ter um tamanho */
+  width: 52.5px;           /* Defina o tamanho do ícone */
+  height: 58.33px;          /* Defina o tamanho do ícone */
+  background-image: url('/icons/bookIcon.svg'); /* Caminho para o SVG */
+  background-size: contain; /* Garante que o SVG seja redimensionado corretamente */
+  background-repeat: no-repeat;
+}
+
+.profile-openBookIcon {
+  display: inline-block; /* Certifique-se que o elemento pode ter um tamanho */
+  width: 52px;           /* Defina o tamanho do ícone */
+  height: 46px;          /* Defina o tamanho do ícone */
+  background-image: url('/icons/livroAbertoIcon.svg'); /* Caminho para o SVG */
+  background-size: contain; /* Garante que o SVG seja redimensionado corretamente */
+  background-repeat: no-repeat;
+}
+
+.profile-pointsIcon {
+  display: inline-block; /* Certifique-se que o elemento pode ter um tamanho */
+  width: 52px;           /* Defina o tamanho do ícone */
+  height: 52px;          /* Defina o tamanho do ícone */
+  background-image: url('/icons/pointsIcon.svg'); /* Caminho para o SVG */
+  background-size: contain; /* Garante que o SVG seja redimensionado corretamente */
+  background-repeat: no-repeat;
+}
+
+.profile-fireIcon {
+  display: inline-block; /* Certifique-se que o elemento pode ter um tamanho */
+  width: 52px;           /* Defina o tamanho do ícone */
+  height: 59px;          /* Defina o tamanho do ícone */
+  background-image: url('/icons/fireIcon.svg'); /* Caminho para o SVG */
+  background-size: contain; /* Garante que o SVG seja redimensionado corretamente */
+  background-repeat: no-repeat;
+}
+
+.profile-questionIcon {
+  display: inline-block; /* Certifique-se que o elemento pode ter um tamanho */
+  width: 17px;           /* Defina o tamanho do ícone */
+  height: 17px;          /* Defina o tamanho do ícone */
+  background-image: url('/icons/questionIcon.svg'); /* Caminho para o SVG */
+  background-size: contain; /* Garante que o SVG seja redimensionado corretamente */
+  background-repeat: no-repeat;
+}
+.profile-questionIcon:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.emblems-section{
+  width: 35%;
+  padding: 15px;
+  border-radius: 14px;
+  background-color: #96CCA8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 40px;
+  gap: 10px;
+}
+
+.profile-content{
+  display: flex;
+  flex-grow: 1;
+  gap: 10px;
+  padding: 20px 0;
+}
+
+.profile-main-content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 15px;
+  border-radius: 14px;
+  background-color: #96CCA8;
+  justify-content: space-between;
+}
+
+.profile-items-wrapper{
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap: 20px;
+}
+
+@media (min-width: 907px) {
+  .profile-items-wrapper {
+    grid-template-columns: repeat(2, 1fr); /* Quando houver mais espaço, limitar a 2 colunas */
+  }
+  .profile-item{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #70997E;
+    border-color: black;
+    border: 1px solid black;
+    justify-content: center;
+    min-height: 216px;
+  }
+}
+
+.profile-item{
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #70997E;
+  border-color: black;
+  border: 1px solid black;
+  justify-content: center;
+  min-height: none;
+}
+
+.profile-item-text{
+  font-size: 22px;
+  position: relative;
+  text-align: center;
+}
+
+.text-hover {
+  display: none;
+}
+
+.profile-item:hover .text-default {
+  display: none;
+}
+
+.profile-item:hover .profile-bookIcon {
+  display: none;
+}
+
+.profile-item:hover .profile-openBookIcon {
+  display: none;
+}
+
+.profile-item:hover .profile-fireIcon {
+  display: none;
+}
+
+.profile-item:hover .text-hover {
+  display: inline;
+}
+
+
+.profile-level{
+  font-size: 40px;
+  gap: 5px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.circle-level{
+  background-color: #C7EFCA;
+  border-radius: 50%;
+  font-size: 36px;
+  padding: 6px;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-level-bar-wrapper{
+  width: 100%;
+  height: 15px; /* Altura da barra */
+  background-color: #C6EEC9; /* Cor de fundo da barra (incompleta) */
+  position: relative;
+}
+
+.profile-level-bar{
+  height: 100%;
+  background-color: #70997E;
+  transition: width 0.3s ease;
+}
+
+.levelWrapper{
+  display: grid;
+  gap: 10px;
+}
+
+.level-and-help{
+  gap: 5px;
+  display: flex;
+  align-items: baseline;
+}
+
+.emblem-item {
+  font-size: 16px;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.emblem-tooltip {
+  visibility: hidden;
+  width: 120px;
+  background-color: #70997E;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.emblem-item:hover .emblem-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.profile-emblems {
+  display: grid;
+  width: 100%;
+  gap: 20px;
+  padding: 10px;
+  grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas maiores */
+}
+
+@media (max-width: 600px) {
+  .profile-emblems {
+    grid-template-columns: 1fr; /* 1 coluna em telas menores */
+  }
+}
+
+.profile-emblems-text{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: baseline;
+  gap: 5px;
+}
+
+.profile-isignia-heartIcon {
+  display: inline-block; /* Certifique-se que o elemento pode ter um tamanho */
+  width: 52px;           /* Defina o tamanho do ícone */
+  height: 47px;          /* Defina o tamanho do ícone */
+  background-image: url('/icons/heartIcon.svg'); /* Caminho para o SVG */
+  background-size: contain; /* Garante que o SVG seja redimensionado corretamente */
+  background-repeat: no-repeat;
+}
+
+.profile-isignia-searchIcon {
+  display: inline-block; /* Certifique-se que o elemento pode ter um tamanho */
+  width: 52px;           /* Defina o tamanho do ícone */
+  height: 47px;          /* Defina o tamanho do ícone */
+  background-image: url('/icons/searchIcon.svg'); /* Caminho para o SVG */
+  background-size: contain; /* Garante que o SVG seja redimensionado corretamente */
+  background-repeat: no-repeat;
+}
+
+.profile-isignia-explorerIcon {
+  display: inline-block; /* Certifique-se que o elemento pode ter um tamanho */
+  width: 52px;           /* Defina o tamanho do ícone */
+  height: 47px;          /* Defina o tamanho do ícone */
+  background-image: url('/icons/explorerIcon.svg'); /* Caminho para o SVG */
+  background-size: contain; /* Garante que o SVG seja redimensionado corretamente */
+  background-repeat: no-repeat;
+}
+
+.profile-isignia-livroAbertoIcon {
+  display: inline-block; /* Certifique-se que o elemento pode ter um tamanho */
+  width: 52px;           /* Defina o tamanho do ícone */
+  height: 47px;          /* Defina o tamanho do ícone */
+  background-image: url('/icons/livroAbertoIcon.svg'); /* Caminho para o SVG */
+  background-size: contain; /* Garante que o SVG seja redimensionado corretamente */
+  background-repeat: no-repeat;
+}
+
+.profile-isignia-moneyIcon {
+  display: inline-block; /* Certifique-se que o elemento pode ter um tamanho */
+  width: 52px;           /* Defina o tamanho do ícone */
+  height: 47px;          /* Defina o tamanho do ícone */
+  background-image: url('/icons/moneyIcon.svg'); /* Caminho para o SVG */
+  background-size: contain; /* Garante que o SVG seja redimensionado corretamente */
+  background-repeat: no-repeat;
+}

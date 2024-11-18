@@ -1,0 +1,122 @@
+.biblioteca {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0;
+  height: 100%; /* Ocupar o espaço total disponível */
+  box-sizing: border-box;
+}
+
+.retangulo {
+  width: 100%;
+  background-color: #96CCA8;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+  min-height: 255px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.lib-title {
+  font-size: 32px;
+  padding: 15px 15px 0px 15px;
+}
+
+.lib-book-cover{
+  width: auto;
+  min-height: 183px;
+  height: 19vh;
+  max-height: 342px;
+  object-fit: cover;
+  border-radius: 4px 4px 0px 0px;
+}
+.lib-book-cover-percent{
+  width: auto;
+  min-height: 175px;
+  height: calc(19vh - 10px);
+  max-height: 342px;
+  object-fit: cover;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.lib-book:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 500ms;
+}
+
+.lib-book{
+  display: flex;
+  flex-direction: column;
+}
+
+.lib-carousel-view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 0 15px;
+  flex-grow: 1;
+}
+
+.lib-carousel-item-list {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto; /* Habilitar rolagem horizontal */
+  scroll-behavior: smooth;
+  padding: 10px;
+  width: calc(240px * 5 + 80px); /* A largura total para suportar 5 itens + os espaçamentos */
+  flex-grow: 1;
+}
+
+.lib-carousel-item-list::-webkit-scrollbar {
+  display: none; /* Esconder scrollbar */
+}
+
+.prev-btn,
+.next-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: #000;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Barra de progresso */
+.lib-progress-bar-container {
+  width: 100%;
+  height: 15px; /* Altura da barra */
+  background-color: #C6EEC9; /* Cor de fundo da barra (incompleta) */
+  border-radius: 0px 0px 4px 4px;
+  position: relative;
+}
+
+.lib-progress-bar {
+  height: 100%;
+  background-color: #70997E; /* Cor da barra de progresso */
+  transition: width 0.3s ease;
+  border-radius: 0px 0px 0px 4px;
+}
+
+.lib-progress-bar2 {
+  height: 100%;
+  background-color: #70997E; /* Cor da barra de progresso */
+  transition: width 0.3s ease;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.lib-progress-bar-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centraliza o texto no meio do container */
+  font-size: 13px;
+  pointer-events: none;
+}

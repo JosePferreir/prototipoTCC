@@ -1,0 +1,112 @@
+.emblems-container{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.emblems-itens-wrapper{
+  display: grid;
+  width: 100%;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.emblems-item{
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #70997E;
+  border-color: black;
+  border: 2px solid black;
+  justify-content: center;
+}
+.emblems-section-title{
+  gap: 10px;
+    font-size: 32px;
+    padding: 20px 0;
+    display: flex;
+    align-items: baseline;
+}
+
+.emblems-bookIcon {
+  display: inline-block; /* Certifique-se que o elemento pode ter um tamanho */
+  width: 52.5px;           /* Defina o tamanho do ícone */
+  height: 58.33px;          /* Defina o tamanho do ícone */
+  background-image: url('/icons/bookIcon.svg'); /* Caminho para o SVG */
+  background-size: contain; /* Garante que o SVG seja redimensionado corretamente */
+  background-repeat: no-repeat;
+}
+
+.remaining-books {
+  font-size: 12px !important;
+  font-weight: normal;
+  margin-top: 4px;
+}
+
+.emblems-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.emblems-text h3 {
+  text-align: center;
+  margin: 0;
+  font-size: 24px; /* Tamanho do título */
+  font-weight: bold;
+}
+
+.emblems-text p {
+  text-align: center;
+  margin: 0;
+  font-size: 16px; /* Tamanho da descrição */
+}
+
+.emblems-heartIcon {
+  display: inline-block; /* Certifique-se que o elemento pode ter um tamanho */
+  width: 52px;           /* Defina o tamanho do ícone */
+  height: 47px;          /* Defina o tamanho do ícone */
+  background-image: url('/icons/heartIcon.svg'); /* Caminho para o SVG */
+  background-size: contain; /* Garante que o SVG seja redimensionado corretamente */
+  background-repeat: no-repeat;
+}
+
+.emblems-searchIcon {
+  display: inline-block; /* Certifique-se que o elemento pode ter um tamanho */
+  width: 52px;           /* Defina o tamanho do ícone */
+  height: 47px;          /* Defina o tamanho do ícone */
+  background-image: url('/icons/searchIcon.svg'); /* Caminho para o SVG */
+  background-size: contain; /* Garante que o SVG seja redimensionado corretamente */
+  background-repeat: no-repeat;
+}
+
+.emblems-explorerIcon {
+  display: inline-block; /* Certifique-se que o elemento pode ter um tamanho */
+  width: 52px;           /* Defina o tamanho do ícone */
+  height: 47px;          /* Defina o tamanho do ícone */
+  background-image: url('/icons/explorerIcon.svg'); /* Caminho para o SVG */
+  background-size: contain; /* Garante que o SVG seja redimensionado corretamente */
+  background-repeat: no-repeat;
+}
+
+.emblems-livroAbertoIcon {
+  display: inline-block; /* Certifique-se que o elemento pode ter um tamanho */
+  width: 52px;           /* Defina o tamanho do ícone */
+  height: 47px;          /* Defina o tamanho do ícone */
+  background-image: url('/icons/livroAbertoIcon.svg'); /* Caminho para o SVG */
+  background-size: contain; /* Garante que o SVG seja redimensionado corretamente */
+  background-repeat: no-repeat;
+}
+
+.emblems-moneyIcon {
+  display: inline-block; /* Certifique-se que o elemento pode ter um tamanho */
+  width: 52px;           /* Defina o tamanho do ícone */
+  height: 47px;          /* Defina o tamanho do ícone */
+  background-image: url('/icons/moneyIcon.svg'); /* Caminho para o SVG */
+  background-size: contain; /* Garante que o SVG seja redimensionado corretamente */
+  background-repeat: no-repeat;
+}

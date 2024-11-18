@@ -1,0 +1,162 @@
+.bp-container{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.book-progress-container {
+  display: flex;
+  align-items: flex-start; /* Alinha a imagem e as informações na vertical */
+  gap: 20px; /* Espaçamento entre a imagem e as informações */
+}
+
+.book-progress-cover {
+  width: auto; 
+  height: 650px; /* Mantém a proporção da imagem */
+  border-radius: 8px; /* Bordas levemente arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+.book-progress-wrapper{
+  padding: 20px 20px 20px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.book-progress-info {
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.book-progress-info h1 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.book-progress-info p {
+  margin: 8px 0;
+  font-size: 24px;
+}
+
+.book-progress-info p strong {
+  font-weight: bold;
+}
+
+/* Botão de voltar */
+.back-button {
+  display: flex;
+  gap: 8px;
+  background-color: #96CCA8;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.back-button:hover {
+  background-color: #70997E;
+}
+
+/* Botão de adicionar à biblioteca */
+.add-button {
+  background-color: #96CCA8;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 14px;
+  cursor: pointer;
+  font-size: 32px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.add-button:hover {
+  background-color: #70997E;
+}
+
+.setaIcon {
+  display: inline-block; /* Certifique-se que o elemento pode ter um tamanho */
+  width: 16px;           /* Defina o tamanho do ícone */
+  height: 16px;          /* Defina o tamanho do ícone */
+  background-image: url('/icons/setaIcon.svg'); /* Caminho para o SVG */
+  background-size: contain; /* Garante que o SVG seja redimensionado corretamente */
+  background-repeat: no-repeat;
+}
+
+.bp-comentarios{
+  font-size: 32px;
+  padding-bottom: 20px;
+}
+
+.progressBarWrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  background-color: #96CCA8;
+  padding: 20px;
+  width: min-content;
+  border-radius: 20px;
+  align-items: center;
+}
+
+.textProgress {
+  font-size: 32px;
+  min-width: 200px;
+  text-align: center;
+}
+
+.livroAbertoIcon {
+  display: inline-block; /* Certifique-se que o elemento pode ter um tamanho */
+  width: 52px;           /* Defina o tamanho do ícone */
+  height: 46px;          /* Defina o tamanho do ícone */
+  background-image: url('/icons/livroAbertoIcon.svg'); /* Caminho para o SVG */
+  background-size: contain; /* Garante que o SVG seja redimensionado corretamente */
+  background-repeat: no-repeat;
+}
+
+.addLeitura{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  background-color: #96CCA8;
+  padding: 20px;
+  width: min-content;
+  border-radius: 20px;
+  align-items: center;
+}
+.addLeitura:hover{
+  background-color: #70997E;
+  cursor: pointer;
+}
+.options{
+  display: flex;
+  gap: 20px;
+}
+
+.dialogContent-bookProgress{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.dialogButton-bookProgress{
+  background-color: #C6EEC9;
+  border-radius: 15px;
+  padding: 15px;
+}
+.dialogButton-bookProgress:hover{
+  background-color: #70997E;
+  cursor: pointer;
+}
+.dialogButton-cancel-bookProgress{
+  background-color: #EECFC6;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.dialogButton-cancel-bookProgress:hover{
+  background-color: #998070;
+  cursor: pointer;
+}

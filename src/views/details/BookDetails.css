@@ -1,0 +1,90 @@
+.bd-container{
+  padding-top: 20px;
+}
+.book-details-container {
+  display: flex;
+  align-items: flex-start; /* Alinha a imagem e as informações na vertical */
+  gap: 20px; /* Espaçamento entre a imagem e as informações */
+}
+
+.book-details-cover {
+  width: auto; 
+  height: 650px; /* Mantém a proporção da imagem */
+  border-radius: 8px; /* Bordas levemente arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+.book-details-wrapper{
+  padding: 20px 20px 20px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.book-details-info {
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.book-details-info h1 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.book-details-info p {
+  margin: 8px 0;
+  font-size: 24px;
+}
+
+.book-details-info p strong {
+  font-weight: bold;
+}
+
+/* Botão de voltar */
+.back-button {
+  display: flex;
+  gap: 8px;
+  background-color: #96CCA8;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.back-button:hover {
+  background-color: #70997E;
+}
+
+/* Botão de adicionar à biblioteca */
+.add-button {
+  background-color: #96CCA8;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 14px;
+  cursor: pointer;
+  font-size: 32px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.add-button:hover {
+  background-color: #70997E;
+}
+
+.setaIcon {
+  display: inline-block; /* Certifique-se que o elemento pode ter um tamanho */
+  width: 16px;           /* Defina o tamanho do ícone */
+  height: 16px;          /* Defina o tamanho do ícone */
+  background-image: url('/icons/setaIcon.svg'); /* Caminho para o SVG */
+  background-size: contain; /* Garante que o SVG seja redimensionado corretamente */
+  background-repeat: no-repeat;
+}
+
+.comentarios{
+  font-size: 32px;
+  padding-bottom: 20px;
+}

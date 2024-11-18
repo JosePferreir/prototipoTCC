@@ -1,0 +1,402 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "O Senhor dos Anéis: A Sociedade do Anel",
+      "author": "J.R.R. Tolkien",
+      "genre": "Aventura",
+      "summary": "Uma jornada épica pela Terra Média...",
+      "coverImage": "/covers/sociedade_do_anel.jpg"
+    },
+    {
+      "id": "2",
+      "title": "O Senhor dos Anéis: As Duas Torres",
+      "author": "J.R.R. Tolkien",
+      "genre": "Aventura",
+      "summary": "Uma jornada épica pela Terra Média...",
+      "coverImage": "/covers/as_duas_torres.jpg"
+    },
+    {
+      "id": "3",
+      "title": "O Senhor dos Anéis: O Retorno do Rei",
+      "author": "J.R.R. Tolkien",
+      "genre": "Aventura",
+      "summary": "Uma jornada épica pela Terra Média...",
+      "coverImage": "/covers/retorno_do_rei.jpg"
+    },
+    {
+      "id": "4",
+      "title": "1984",
+      "author": "George Orwell",
+      "genre": "Distopia",
+      "summary": "Uma visão sombria de um futuro totalitário...",
+      "coverImage": "/covers/1984.jpg"
+    },
+    {
+      "id": "5",
+      "title": "Hary Potter e a Pedra Filosofal",
+      "author": "George Orwell",
+      "genre": "Aventura",
+      "summary": "Uma visão sombria de um futuro totalitário...",
+      "coverImage": "/covers/pedra_filosofal.jpg"
+    },
+    {
+      "id": "6",
+      "title": "Hary Potter e o Prisoneiro de Azkaban",
+      "author": "George Orwell",
+      "genre": "Aventura",
+      "summary": "Uma visão sombria de um futuro totalitário...",
+      "coverImage": "/covers/prisioneiro_askaban.jpg"
+    },
+    {
+      "id": "7",
+      "title": "Hary Potter e o Prisoneiro de Azkaban",
+      "author": "George Orwell",
+      "genre": "Aventura",
+      "summary": "Uma visão sombria de um futuro totalitário...",
+      "coverImage": "/covers/prisioneiro_askaban.jpg"
+    }
+  ],
+  "user": [
+    {
+      "id": "1",
+      "name": "João Silva",
+      "email": "joao@example.com",
+      "password": "teste",
+      "nivel": 5,
+      "pontos": 5620,
+      "sequencia": 2,
+      "sequenciaMaxima": 5,
+      "pagesRead": 1044,
+      "totalBooksRead": 2,
+      "genresRead": {
+        "romance": 0,
+        "aventura": 2,
+        "investigacao": 0,
+        "economia": 0
+      },
+      "lastReadDate": "2024-11-10"
+    },
+    {
+      "id": "4",
+      "name": "josefino",
+      "email": "fino",
+      "password": "123",
+      "nivel": 0,
+      "pontos": 0,
+      "sequencia": 0,
+      "sequenciaMaxima": 0,
+      "pagesRead": 0,
+      "totalBooksRead": 0,
+      "genresRead": {
+        "romance": 0,
+        "aventura": 0,
+        "investigacao": 0,
+        "economia": 0
+      },
+      "lastReadDate": ""
+    },
+    {
+      "id": "5",
+      "name": "carlos",
+      "email": "calo",
+      "password": "1234",
+      "nivel": 1,
+      "pontos": 0,
+      "sequencia": 0,
+      "sequenciaMaxima": 0,
+      "pagesRead": 0,
+      "totalBooksRead": 0,
+      "genresRead": {
+        "romance": 0,
+        "aventura": 0,
+        "investigacao": 0,
+        "economia": 0
+      },
+      "lastReadDate": ""
+    },
+    {
+      "id": "6",
+      "name": "testudo",
+      "email": "tt",
+      "password": "123",
+      "nivel": 2,
+      "pontos": 2800,
+      "sequencia": 2,
+      "sequenciaMaxima": 2,
+      "pagesRead": 520,
+      "totalBooksRead": 1,
+      "genresRead": {
+        "romance": 0,
+        "aventura": 1,
+        "investigacao": 0,
+        "economia": 0
+      },
+      "lastReadDate": "2024-11-12"
+    }
+  ],
+  "user_books": [
+    {
+      "id": "1",
+      "usuarioId": 1,
+      "bookId": 1,
+      "totalPages": 500,
+      "pagesRead": 250,
+      "progress": 100
+    },
+    {
+      "id": "2",
+      "usuarioId": 1,
+      "bookId": 2,
+      "totalPages": 500,
+      "pagesRead": 500,
+      "progress": 100
+    },
+    {
+      "id": "3",
+      "usuarioId": 1,
+      "bookId": 3,
+      "totalPages": 500,
+      "pagesRead": 49,
+      "progress": 9
+    },
+    {
+      "id": "fd40",
+      "usuarioId": 1,
+      "bookId": 4,
+      "totalPages": 325,
+      "pagesRead": 5,
+      "progress": 1
+    },
+    {
+      "id": "0a62",
+      "usuarioId": 1,
+      "bookId": 5,
+      "totalPages": 279,
+      "pagesRead": 0,
+      "progress": 0
+    },
+    {
+      "id": "a316",
+      "usuarioId": 4,
+      "bookId": 6,
+      "totalPages": 356,
+      "pagesRead": 200,
+      "progress": 56
+    },
+    {
+      "id": "a00f",
+      "usuarioId": 6,
+      "bookId": 3,
+      "totalPages": 500,
+      "pagesRead": 500,
+      "progress": 100
+    },
+    {
+      "id": "55fb",
+      "usuarioId": 6,
+      "bookId": 1,
+      "totalPages": 500,
+      "pagesRead": 0,
+      "progress": 0
+    },
+    {
+      "id": "9562",
+      "usuarioId": 6,
+      "bookId": 2,
+      "totalPages": 500,
+      "pagesRead": 20,
+      "progress": 4
+    }
+  ],
+  "insignias": [
+    {
+      "id": "1",
+      "titulo": "Primeiro Livro",
+      "descricao": "Complete seu primeiro livro no aplicativo",
+      "numeroRepresentativo": 0,
+      "categoria": "geral",
+      "icon": "livroAbertoIcon"
+    },
+    {
+      "id": "2",
+      "titulo": "Leitor Iniciante",
+      "descricao": "Registre a leitura de 5 livros",
+      "numeroRepresentativo": 5,
+      "categoria": "geral",
+      "icon": "bookIcon"
+    },
+    {
+      "id": "3",
+      "titulo": "Romântico Iniciante",
+      "descricao": "Registre a leitura de 5 livros de romance",
+      "numeroRepresentativo": 5,
+      "categoria": "romance",
+      "icon": "heartIcon"
+    },
+    {
+      "id": "4",
+      "titulo": "Investigador Iniciante",
+      "descricao": "Registre a leitura de 5 livros de investigação",
+      "numeroRepresentativo": 5,
+      "categoria": "investigacao",
+      "icon": "searchIcon"
+    },
+    {
+      "id": "5",
+      "titulo": "Aventureiro Iniciante",
+      "descricao": "Registre a leitura de 5 livros de aventura",
+      "numeroRepresentativo": 5,
+      "categoria": "aventura",
+      "icon": "explorerIcon"
+    },
+    {
+      "id": "6",
+      "titulo": "Aventureiro Júnior",
+      "descricao": "Registre a leitura de 10 livros de aventura",
+      "numeroRepresentativo": 10,
+      "categoria": "aventura",
+      "icon": "explorerIcon"
+    },
+    {
+      "id": "7",
+      "titulo": "Aventureiro",
+      "descricao": "Registre a leitura de 15 livros de aventura",
+      "numeroRepresentativo": 15,
+      "categoria": "aventura",
+      "icon": "explorerIcon"
+    },
+    {
+      "id": "8",
+      "titulo": "Aventureiro Avançado",
+      "descricao": "Registre a leitura de 25 livros de aventura",
+      "numeroRepresentativo": 25,
+      "categoria": "aventura",
+      "icon": "explorerIcon"
+    },
+    {
+      "id": "9",
+      "titulo": "Aventureiro Mestre",
+      "descricao": "Registre a leitura de 40 livros de aventura",
+      "numeroRepresentativo": 40,
+      "categoria": "aventura",
+      "icon": "explorerIcon"
+    },
+    {
+      "id": "10",
+      "titulo": "Romântico Júnior",
+      "descricao": "Registre a leitura de 10 romances",
+      "numeroRepresentativo": 10,
+      "categoria": "romance",
+      "icon": "heartIcon"
+    },
+    {
+      "id": "11",
+      "titulo": "Romântico",
+      "descricao": "Registre a leitura de 15 romances",
+      "numeroRepresentativo": 15,
+      "categoria": "romance",
+      "icon": "heartIcon"
+    },
+    {
+      "id": "12",
+      "titulo": "Romântico Avançado",
+      "descricao": "Registre a leitura de 25 romances",
+      "numeroRepresentativo": 25,
+      "categoria": "romance",
+      "icon": "heartIcon"
+    },
+    {
+      "id": "13",
+      "titulo": "Romântico Mestre",
+      "descricao": "Registre a leitura de 40 romances",
+      "numeroRepresentativo": 40,
+      "categoria": "romance",
+      "icon": "heartIcon"
+    },
+    {
+      "id": "14",
+      "titulo": "Economista Iniciante",
+      "descricao": "Registre a leitura de 5 livros de economia",
+      "numeroRepresentativo": 5,
+      "categoria": "economia",
+      "icon": "moneyIcon"
+    },
+    {
+      "id": "15",
+      "titulo": "Economista Júnior",
+      "descricao": "Registre a leitura de 10 livros de economia",
+      "numeroRepresentativo": 10,
+      "categoria": "economia",
+      "icon": "moneyIcon"
+    },
+    {
+      "id": "16",
+      "titulo": "Economista",
+      "descricao": "Registre a leitura de 15 livros de economia",
+      "numeroRepresentativo": 15,
+      "categoria": "economia",
+      "icon": "moneyIcon"
+    },
+    {
+      "id": "17",
+      "titulo": "Economista Avançado",
+      "descricao": "Registre a leitura de 25 livros de economia",
+      "numeroRepresentativo": 25,
+      "categoria": "economia",
+      "icon": "moneyIcon"
+    },
+    {
+      "id": "18",
+      "titulo": "Economista Mestre",
+      "descricao": "Registre a leitura de 40 livros de economia",
+      "numeroRepresentativo": 40,
+      "categoria": "economia",
+      "icon": "moneyIcon"
+    },
+    {
+      "id": "19",
+      "titulo": "Investigador Júnior",
+      "descricao": "Registre a leitura de 10 livros de investigação",
+      "numeroRepresentativo": 10,
+      "categoria": "investigacao",
+      "icon": "searchIcon"
+    },
+    {
+      "id": "20",
+      "titulo": "Investigador",
+      "descricao": "Registre a leitura de 15 livros de investigação",
+      "numeroRepresentativo": 15,
+      "categoria": "investigacao",
+      "icon": "searchIcon"
+    },
+    {
+      "id": "21",
+      "titulo": "Investigador Avançado",
+      "descricao": "Registre a leitura de 25 livros de investigação",
+      "numeroRepresentativo": 25,
+      "categoria": "investigacao",
+      "icon": "searchIcon"
+    },
+    {
+      "id": "22",
+      "titulo": "Investigador Mestre",
+      "descricao": "Registre a leitura de 40 livros de investigação",
+      "numeroRepresentativo": 40,
+      "categoria": "investigacao",
+      "icon": "searchIcon"
+    }
+  ],
+  "user_insignias": [
+    {
+      "id": "1",
+      "usuarioId": 1,
+      "insigniaId": 1
+    },
+    {
+      "id": "fc61",
+      "usuarioId": "6",
+      "insigniaId": "1"
+    }
+  ]
+}

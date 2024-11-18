@@ -1,0 +1,125 @@
+/* Estilo da sidebar */
+.sidebar {
+  min-width: 250px;
+  width: 250px;
+  background-color: #96CCA8;
+  height: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  color: black;
+  font-weight: regular;
+  font-size: 20px;
+}
+
+/* Estilo para cada item do menu */
+.menu-item {
+  display: flex;           /* Mantém o ícone e o texto na mesma linha */
+  align-items: center;     /* Alinha verticalmente o ícone e o texto */
+  margin-top: 10px;
+  padding: 10px;
+  gap: 10px;
+}
+.fireAndLevel{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.fireWrapper{
+  padding: 8px 10px 8px 10px;
+  border-radius: 15%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #C6EEC9;
+}
+
+/* Estilo para o link */
+.menu-item a {
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  color: black;
+  font-weight: regular;
+  font-size: 20px;
+}
+
+/* Efeito hover nos links */
+.menu-item:hover {
+  background-color: #70997E;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+/* Estilo para o ícone */
+.homeIcon {
+  display: inline-block; /* Certifique-se que o elemento pode ter um tamanho */
+  width: 16px;           /* Defina o tamanho do ícone */
+  height: 18px;          /* Defina o tamanho do ícone */
+  background-image: url('/icons/home.svg'); /* Caminho para o SVG */
+  background-size: contain; /* Garante que o SVG seja redimensionado corretamente */
+  background-repeat: no-repeat;
+}
+
+.perfilIcon {
+  display: inline-block; /* Certifique-se que o elemento pode ter um tamanho */
+  width: 20px;           /* Defina o tamanho do ícone */
+  height: 20px;          /* Defina o tamanho do ícone */
+  background-image: url('/icons/perfilIcon.svg'); /* Caminho para o SVG */
+  background-size: contain; /* Garante que o SVG seja redimensionado corretamente */
+  background-repeat: no-repeat;
+}
+.bookIcon {
+  display: inline-block; /* Certifique-se que o elemento pode ter um tamanho */
+  width: 16px;           /* Defina o tamanho do ícone */
+  height: 20px;          /* Defina o tamanho do ícone */
+  background-image: url('/icons/bookIcon.svg'); /* Caminho para o SVG */
+  background-size: contain; /* Garante que o SVG seja redimensionado corretamente */
+  background-repeat: no-repeat;
+}
+.emblemIcon {
+  display: inline-block; /* Certifique-se que o elemento pode ter um tamanho */
+  width: 22px;           /* Defina o tamanho do ícone */
+  height: 21px;          /* Defina o tamanho do ícone */
+  background-image: url('/icons/emblemIcon.svg'); /* Caminho para o SVG */
+  background-size: contain; /* Garante que o SVG seja redimensionado corretamente */
+  background-repeat: no-repeat;
+}
+.fireIcon {
+  display: inline-block; /* Certifique-se que o elemento pode ter um tamanho */
+  width: 22px;           /* Defina o tamanho do ícone */
+  height: 21px;          /* Defina o tamanho do ícone */
+  background-image: url('/icons/fireIcon.svg'); /* Caminho para o SVG */
+  background-size: contain; /* Garante que o SVG seja redimensionado corretamente */
+  background-repeat: no-repeat;
+}
+
+.iconWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: #C6EEC9;
+  border-radius: 20%;
+}
+
+.menu-item.active {
+  background-color: #70997E; /* Mesmo fundo do hover */
+  border-radius: 15px;
+}
+
+.sideMenu-questionIcon {
+  display: inline-block; /* Certifique-se que o elemento pode ter um tamanho */
+  width: 14px;           /* Defina o tamanho do ícone */
+  height: 14px;          /* Defina o tamanho do ícone */
+  background-image: url('/icons/questionIcon.svg'); /* Caminho para o SVG */
+  background-size: contain; /* Garante que o SVG seja redimensionado corretamente */
+  background-repeat: no-repeat;
+}
+.sideMenu-questionIcon:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+

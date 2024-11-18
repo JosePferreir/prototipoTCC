@@ -1,0 +1,23 @@
+.pb-progress {
+  --size:120px;
+  width: var(--size);
+  aspect-ratio:1;
+  border-radius : 50%;
+  background: conic-gradient(#70997E var(--pb-progress,0), #C6EEC9 0);
+  display: grid;
+  place-content:center;
+
+  transition: background 0.3s ease; 
+}
+.pb-progress:after{
+  width: calc(var(--size) * .8);
+  aspect-ratio:1;
+  content: attr(data-value) '%';
+  display: grid;
+  background: #96CCA8;
+  border-radius : 50%;
+  display: grid;
+  font-size: calc(var(--size) * .3);;
+  place-content:center;
+  font-family: arial;
+}

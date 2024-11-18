@@ -1,0 +1,54 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #96CCA8;
+}
+
+.register-box {
+  padding: 30px;
+  background-color: #C5EDC8;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+}
+
+.register-box h2 {
+  margin-bottom: 20px;
+  color: #3c5845;
+}
+
+.register-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #70997e; /* Cor de botão */
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.register-button:hover {
+  background-color: #5a7d63;
+}
+
+.login-link {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #3c5845;
+  cursor: pointer;
+}
+
+.login-link span {
+  text-decoration: underline;
+}
+
+.login-link:hover {
+  color: #2b4536;
+}
