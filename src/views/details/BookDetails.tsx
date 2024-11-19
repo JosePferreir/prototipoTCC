@@ -124,9 +124,9 @@ function BookDetails() {
     settotalPages(0);
     setOpen(!open);
   };
-  const confirmModal = () => {
+  const confirmModal = async () => {
     try{
-      fetch('https://prototipo-tcc-fake-api.vercel.app/user_books', {
+      await fetch('https://prototipo-tcc-fake-api.vercel.app/user_books', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
