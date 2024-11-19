@@ -152,6 +152,25 @@
         "economia": 0
       },
       "lastReadDate": "2024-11-18"
+    },
+    {
+      "id": "8",
+      "name": "Sera",
+      "email": "Zzz",
+      "password": "123",
+      "nivel": 0,
+      "pontos": 0,
+      "sequencia": 0,
+      "sequenciaMaxima": 0,
+      "pagesRead": 0,
+      "totalBooksRead": 0,
+      "genresRead": {
+        "romance": 0,
+        "aventura": 0,
+        "investigacao": 0,
+        "economia": 0
+      },
+      "lastReadDate": ""
     }
   ],
   "user_books": [
@@ -242,6 +261,22 @@
       "totalPages": 500,
       "pagesRead": 500,
       "progress": 100
+    },
+    {
+      "id": "d0ea",
+      "usuarioId": 8,
+      "bookId": 1,
+      "totalPages": 500,
+      "pagesRead": 0,
+      "progress": 0
+    },
+    {
+      "id": "50cf",
+      "usuarioId": 8,
+      "bookId": 2,
+      "totalPages": 500,
+      "pagesRead": 0,
+      "progress": 0
     }
   ],
   "insignias": [

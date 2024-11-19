@@ -13,7 +13,7 @@ function Home() {
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
-    fetch('https://prototipo-tcc-fake-api.vercel.app/books')
+    fetch('https://808f28bf159ffb2cff0491f6299f6d0f.serveo.net/books')
       .then((response) => response.json())
       .then((data: Book[]) => setBooks(data))
       .catch((error) => console.error('Erro ao buscar os livros:', error));
