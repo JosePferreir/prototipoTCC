@@ -40,7 +40,7 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
   const handleLogin = async () => {
     try {
       // Faz uma chamada para json-server para obter o usuário pelo email
-      const response = await fetch(`http://localhost:3000/user?email=${email}`);
+      const response = await fetch(`https://prototipo-tcc-fake-api.vercel.app/user?email=${email}`);
       const users: User[] = await response.json();
 
       // Verifica se o usuário existe e se a senha está correta

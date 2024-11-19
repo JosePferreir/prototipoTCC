@@ -22,7 +22,7 @@ function Library() {
   
         // Requisição para obter os livros associados ao usuário
         const userBooksResponse = await fetch(
-          `http://localhost:3000/user_books?usuarioId=${user.id}`
+          `https://prototipo-tcc-fake-api.vercel.app/user_books?usuarioId=${user.id}`
         );
         const userBooksData = await userBooksResponse.json();
   
@@ -30,7 +30,7 @@ function Library() {
         const userBookIds = userBooksData.map((ub: { bookId: number }) => ub.bookId);
   
         // Buscar todos os livros e filtrar apenas os que o usuário possui
-        const booksResponse = await fetch('http://localhost:3000/books');
+        const booksResponse = await fetch('https://prototipo-tcc-fake-api.vercel.app/books');
         const allBooks = await booksResponse.json();
 
         const filteredBooks: Book[] = allBooks.filter((book: Book) => userBookIds.includes(Number(book.id)));

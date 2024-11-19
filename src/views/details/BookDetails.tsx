@@ -60,7 +60,7 @@ function BookDetails() {
   useEffect(() => {
     const fetchBook = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/books/${id}`);
+        const response = await fetch(`https://prototipo-tcc-fake-api.vercel.app/books/${id}`);
         if (!response.ok) {
           throw new Error('Erro ao buscar o livro');
         }
@@ -88,7 +88,7 @@ function BookDetails() {
 
       try {
         const response = await fetch(
-          `http://localhost:3000/user_books?usuarioId=${user.id}&bookId=${id}`
+          `https://prototipo-tcc-fake-api.vercel.app/user_books?usuarioId=${user.id}&bookId=${id}`
         );
         const userBooks: UserBook[] = await response.json();
         setIsInLibrary(userBooks.length > 0);
@@ -126,7 +126,7 @@ function BookDetails() {
   };
   const confirmModal = () => {
     try{
-      fetch('http://localhost:3000/user_books', {
+      fetch('https://prototipo-tcc-fake-api.vercel.app/user_books', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

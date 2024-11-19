@@ -36,8 +36,8 @@ function Emblems() {
   useEffect(() => {
     const fetchData = async () => {
       // Carrega as insígnias
-      const insigniasResponse = await fetch('http://localhost:3000/insignias');
-      const userInsigniasResponse = user ? await fetch(`http://localhost:3000/user_insignias?usuarioId=${user.id}`) : { json: async () => [] };
+      const insigniasResponse = await fetch('https://prototipo-tcc-fake-api.vercel.app/insignias');
+      const userInsigniasResponse = user ? await fetch(`https://prototipo-tcc-fake-api.vercel.app/user_insignias?usuarioId=${user.id}`) : { json: async () => [] };
       const insigniasData = await insigniasResponse.json();
       const userInsigniasData = await userInsigniasResponse.json();
       

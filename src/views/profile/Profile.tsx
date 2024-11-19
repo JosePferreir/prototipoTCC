@@ -32,9 +32,9 @@ function Profile() {
     const fetchData = async () => {
       
       // Carrega as insígnias
-      const insigniasResponse = await fetch('http://localhost:3000/insignias');
+      const insigniasResponse = await fetch('https://prototipo-tcc-fake-api.vercel.app/insignias');
       if (!user) return;
-      const userInsigniasResponse = await fetch(`http://localhost:3000/user_insignias?usuarioId=${user.id}`);
+      const userInsigniasResponse = await fetch(`https://prototipo-tcc-fake-api.vercel.app/user_insignias?usuarioId=${user.id}`);
       const insigniasData = await insigniasResponse.json();
       const userInsigniasData = await userInsigniasResponse.json();
       
