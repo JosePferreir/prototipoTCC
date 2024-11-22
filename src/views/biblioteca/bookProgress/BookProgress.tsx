@@ -64,7 +64,7 @@ function BookProgress() {
   useEffect(() => {
     const fetchBook = async () => {
       try {
-        const response = await fetch(`https://808f28bf159ffb2cff0491f6299f6d0f.serveo.net/books/${id}`);
+        const response = await fetch(`http://179.124.178.17:3000/books/${id}`);
         if (!response.ok) {
           throw new Error('Erro ao buscar o livro');
         }
@@ -91,7 +91,7 @@ function BookProgress() {
 
       try {
         const response = await fetch(
-          `https://808f28bf159ffb2cff0491f6299f6d0f.serveo.net/user_books?usuarioId=${user.id}&bookId=${id}`
+          `http://179.124.178.17:3000/user_books?usuarioId=${user.id}&bookId=${id}`
         );
         const userBookData = await response.json();
         setUserBook(userBookData[0]); // Como esperamos apenas um item, selecionamos o primeiro
@@ -172,7 +172,7 @@ function BookProgress() {
     console.log("novo user ",newUser)
     console.log("comvalor ",newUserBook)
     console.log(user)
-    await fetch(`https://808f28bf159ffb2cff0491f6299f6d0f.serveo.net/user_books/${newUserBook.id}`, {
+    await fetch(`http://179.124.178.17:3000/user_books/${newUserBook.id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -180,7 +180,7 @@ function BookProgress() {
       body: JSON.stringify(newUserBook),
     });
     console.log("NOVO: user",newUser)
-    await fetch(`https://808f28bf159ffb2cff0491f6299f6d0f.serveo.net/user/${newUser.id}`, {
+    await fetch(`http://179.124.178.17:3000/user/${newUser.id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -222,9 +222,9 @@ function BookProgress() {
   };
 
   const checkAndAddAchievements = async (newUser: User, genre: string) => {
-    const insigniasResponse = await fetch('https://808f28bf159ffb2cff0491f6299f6d0f.serveo.net/insignias');
+    const insigniasResponse = await fetch('http://179.124.178.17:3000/insignias');
     const insigniasData = await insigniasResponse.json();
-    const userInsigniasResponse = await fetch(`https://808f28bf159ffb2cff0491f6299f6d0f.serveo.net/user_insignias?usuarioId=${newUser.id}`);
+    const userInsigniasResponse = await fetch(`http://179.124.178.17:3000/user_insignias?usuarioId=${newUser.id}`);
     const userInsigniasData = await userInsigniasResponse.json();
 
     const userInsigniaIds = userInsigniasData.map((userInsignia: { insigniaId: number | string }) => Number(userInsignia.insigniaId));
@@ -236,7 +236,7 @@ function BookProgress() {
       const remainingBooks = calculateRemainingBooks(insignia);
       console.log("remainingBooks",remainingBooks);
       if (remainingBooks === 0) {
-        await fetch('https://808f28bf159ffb2cff0491f6299f6d0f.serveo.net/user_insignias', {
+        await fetch('http://179.124.178.17:3000/user_insignias', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -255,7 +255,7 @@ function BookProgress() {
       const remainingBooksForGeneral = insignia.numeroRepresentativo - newUser.totalBooksRead;
       console.log("remainingBooksForGeneral",remainingBooksForGeneral);
       if (remainingBooksForGeneral <= 0) {
-        await fetch('https://808f28bf159ffb2cff0491f6299f6d0f.serveo.net/user_insignias', {
+        await fetch('http://179.124.178.17:3000/user_insignias', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

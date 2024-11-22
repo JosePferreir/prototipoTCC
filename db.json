@@ -171,6 +171,44 @@
         "economia": 0
       },
       "lastReadDate": ""
+    },
+    {
+      "id": "9",
+      "name": "jean",
+      "email": "jean",
+      "password": "123",
+      "nivel": 0,
+      "pontos": 0,
+      "sequencia": 0,
+      "sequenciaMaxima": 0,
+      "pagesRead": 0,
+      "totalBooksRead": 0,
+      "genresRead": {
+        "romance": 0,
+        "aventura": 0,
+        "investigacao": 0,
+        "economia": 0
+      },
+      "lastReadDate": ""
+    },
+    {
+      "id": "10",
+      "name": "Teste",
+      "email": "Teste",
+      "password": "teste",
+      "nivel": 0,
+      "pontos": 695,
+      "sequencia": 1,
+      "sequenciaMaxima": 0,
+      "pagesRead": 99,
+      "totalBooksRead": 1,
+      "genresRead": {
+        "romance": 0,
+        "aventura": 3,
+        "investigacao": 0,
+        "economia": 0
+      },
+      "lastReadDate": "2024-11-19"
     }
   ],
   "user_books": [
@@ -277,6 +315,70 @@
       "totalPages": 500,
       "pagesRead": 0,
       "progress": 0
+    },
+    {
+      "id": "ac20",
+      "usuarioId": 9,
+      "bookId": 1,
+      "totalPages": 600,
+      "pagesRead": 0,
+      "progress": 0
+    },
+    {
+      "id": "1136",
+      "usuarioId": 9,
+      "bookId": 2,
+      "totalPages": 600,
+      "pagesRead": 0,
+      "progress": 0
+    },
+    {
+      "id": "3e05",
+      "usuarioId": 10,
+      "bookId": 1,
+      "totalPages": 0,
+      "pagesRead": 0,
+      "progress": null
+    },
+    {
+      "id": "b3e7",
+      "usuarioId": 10,
+      "bookId": 2,
+      "totalPages": 0,
+      "pagesRead": 0,
+      "progress": null
+    },
+    {
+      "id": "d445",
+      "usuarioId": 10,
+      "bookId": 3,
+      "totalPages": 0,
+      "pagesRead": 0,
+      "progress": null
+    },
+    {
+      "id": "063c",
+      "usuarioId": 10,
+      "bookId": 4,
+      "totalPages": 0,
+      "pagesRead": 0,
+      "progress": null
+    },
+    {
+      "id": "b946",
+      "usuarioId": 10,
+      "bookId": 7,
+      "totalPages": 0,
+      "pagesRead": 0,
+      "progress": null
+    },
+    {
+      "id": "3ae2",
+      "usuarioId": 10,
+      "bookId": 6,
+      "totalPages": 99,
+      "pagesRead": 99,
+      "progress": 100
     }
   ],
   "insignias": [
@@ -471,6 +573,11 @@
     {
       "id": "ce2d",
       "usuarioId": "7",
+      "insigniaId": "1"
+    },
+    {
+      "id": "9987",
+      "usuarioId": "10",
       "insigniaId": "1"
     }
   ]

@@ -34,14 +34,14 @@ const Register: React.FC = () => {
   const handleRegister = async () => {
     try {
       // Verifica se o email já está cadastrado
-      const response = await fetch(`https://808f28bf159ffb2cff0491f6299f6d0f.serveo.net/user?email=${email}`);
+      const response = await fetch(`http://179.124.178.17:3000/user?email=${email}`);
       const users: User[] = await response.json();
   
       if (users.length > 0) {
         setError('Esse Usuário já está em uso.');
       } else {
         // Obtenha todos os usuários para verificar o último ID
-        const allUsersResponse = await fetch('https://808f28bf159ffb2cff0491f6299f6d0f.serveo.net/user');
+        const allUsersResponse = await fetch('http://179.124.178.17:3000/user');
         const allUsers: User[] = await allUsersResponse.json();
 
         // Encontra o maior ID e incrementa
@@ -72,7 +72,7 @@ const Register: React.FC = () => {
         };
   
         // Cria um novo usuário no backend
-        await fetch('https://808f28bf159ffb2cff0491f6299f6d0f.serveo.net/user', {
+        await fetch('http://179.124.178.17:3000/user', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

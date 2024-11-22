@@ -22,7 +22,7 @@ function Library() {
   
         // Requisição para obter os livros associados ao usuário
         const userBooksResponse = await fetch(
-          `https://808f28bf159ffb2cff0491f6299f6d0f.serveo.net/user_books?usuarioId=${user.id}`
+          `http://179.124.178.17:3000/user_books?usuarioId=${user.id}`
         );
         const userBooksData = await userBooksResponse.json();
   
@@ -30,7 +30,7 @@ function Library() {
         const userBookIds = userBooksData.map((ub: { bookId: number }) => ub.bookId);
   
         // Buscar todos os livros e filtrar apenas os que o usuário possui
-        const booksResponse = await fetch('https://808f28bf159ffb2cff0491f6299f6d0f.serveo.net/books');
+        const booksResponse = await fetch('http://179.124.178.17:3000/books');
         const allBooks = await booksResponse.json();
 
         const filteredBooks: Book[] = allBooks.filter((book: Book) => userBookIds.includes(Number(book.id)));

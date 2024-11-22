@@ -32,9 +32,9 @@ function Profile() {
     const fetchData = async () => {
       
       // Carrega as insígnias
-      const insigniasResponse = await fetch('https://808f28bf159ffb2cff0491f6299f6d0f.serveo.net/insignias');
+      const insigniasResponse = await fetch('http://179.124.178.17:3000/insignias');
       if (!user) return;
-      const userInsigniasResponse = await fetch(`https://808f28bf159ffb2cff0491f6299f6d0f.serveo.net/user_insignias?usuarioId=${user.id}`);
+      const userInsigniasResponse = await fetch(`http://179.124.178.17:3000/user_insignias?usuarioId=${user.id}`);
       const insigniasData = await insigniasResponse.json();
       const userInsigniasData = await userInsigniasResponse.json();
       

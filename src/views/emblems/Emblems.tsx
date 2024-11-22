@@ -36,8 +36,8 @@ function Emblems() {
   useEffect(() => {
     const fetchData = async () => {
       // Carrega as insígnias
-      const insigniasResponse = await fetch('https://808f28bf159ffb2cff0491f6299f6d0f.serveo.net/insignias');
-      const userInsigniasResponse = user ? await fetch(`https://808f28bf159ffb2cff0491f6299f6d0f.serveo.net/user_insignias?usuarioId=${user.id}`) : { json: async () => [] };
+      const insigniasResponse = await fetch('http://179.124.178.17:3000/insignias');
+      const userInsigniasResponse = user ? await fetch(`http://179.124.178.17:3000/user_insignias?usuarioId=${user.id}`) : { json: async () => [] };
       const insigniasData = await insigniasResponse.json();
       const userInsigniasData = await userInsigniasResponse.json();
       
